@@ -1,0 +1,188 @@
+================================================================================
+ToDo:
+notification daemon: mako DONE - will need tweaks to configure
+the files pop up is too big
+vs code config
+
+
+
+MAKE A BLOG DOCUMENTING YOUR JORNY
+
+
+STEP I - MAKE AN ECO SYSTEM
+		> FIND APPS AND THIGHS YOU NEED (DISCOVER, EXPERIMENT)
+		> CONFIGURE THEM (SHORTCUTS, FUNCTIONALITY, MAKE THEM INTEGRATE TO THE SYSTEM)
+
+STEP II - MAKE IT LOOK PRETTY
+		> CUSTOMIZE YOUR APPS TO FIT THE SYSTEM AESTHETIC 
+=================================================================================
+
+#   ██▓     ▒█████    ▄████   ██████ 
+#  ▓██▒    ▒██▒  ██▒ ██▒ ▀█▒▒██    ▒ 
+#  ▒██░    ▒██░  ██▒▒██░▄▄▄░░ ▓██▄   
+#  ▒██░    ▒██   ██░░▓█  ██▓  ▒   ██▒
+#  ░██████▒░ ████▓▒░░▒▓███▀▒▒██████▒▒
+#  ░ ▒░▓  ░░ ▒░▒░▒░  ░▒   ▒ ▒ ▒▓▒ ▒ ░
+#  ░ ░ ▒  ░  ░ ▒ ▒░   ░   ░ ░ ░▒  ░ ░
+#    ░ ░   ░ ░ ░ ▒  ░ ░   ░ ░  ░  ░  
+#      ░  ░    ░ ░        ░       ░  
+#                                   
+Day 1
+Day 2
+Trouble shooting touch pad rolled back failed give it a classic reboot and i worked
+[DONE]→ configure Ulanher as the main lancher 
+	[DONE]-> Need to make customize it to fit the theme 
+
+[DONE]			make mouse scroll a little bit slower 
+
+[FIXED]Flatpacks render issues when fractional scalling
+-->By Forcing XWayland apps to not scale
+
+day 3
+[DONE]fix spotify 
+[DONE]make tile pop up to the right
+
+[DONE] screenshot app + terminal alias -> Hyprshot Script
+
+{DONE] browse files using the terminal -> MC
+
+[DONE] switch to zsh and use ohmyzsh + minimal setup
+
+day 4
+
+[the sudo prob]
+
+[DONE] grub costume theme -> Dedsec Hacker's Den
+
+[DONE] Login-manager SDDM -> eucalyptus-drop Theme
+
+day 5
+
+[DONE] waybar setup - volume - workspaces
+
+day 6q
+
+[DONE] hyprlock setup
+
+-
+
+Final Color Chart → Color scheme Minimal cool calm Etherial Steven Universe Dark (Amethyst) + (Burgudy)
+
+Simple Fedora logo in Amethyst+Burgudy gradien(make costume fedora logo)
+loading turn on on the system splash screen
+loading shutting down the system splash screen
+
+→ Kitty: make minimal and follow color scheme
+
+Workflow:
+→shortcuts(study vim shortcuts first)
+→nvivm
+learn more hyprland shortcuts
+→tmux -> make minimal + follow colorscheme
+
+System Backup
+System Security
+System Scripts
+	-check if there updates availble (and catagorize them)
+1337-Script
+
+4 keys(f8-f12) to bo used
+
+scale down audacity(force it to scale down)
+
+#############################################################################
+
+→Color scheme (Amethyst)
+[in progress]→Costumize on the menu to be minimal (waybar)
+[]→Costumize bar to minimal (Wofi)
+→GTK Theme
+...
+
+--TERMINAL
+tmux minimal setup
+ASCII art as your neofetch logo
+make cat show lines
+
+customize VLC to match theme and make it border less 
+
+##################################################################
+##################################################################
+##################################################################
+
+
+#  _________ _______  _______ _________ _______ 
+#  \__   __/(  ____ \(  ____ \\__   __/(  ____ \
+#     ) (   | (    \/| (    \/   ) (   | (    \/
+#     | |   | (__    | (_____    | |   | (_____ 
+#     | |   |  __)   (_____  )   | |   (_____  )
+#     | |   | (            ) |   | |         ) |
+#     | |   | (____/\/\____) |   | |   /\____) |
+#     )_(   (_______/\_______)   )_(   \_______)
+#                                               
+
+
+-> Edit a video
+-> cut the background of an image
+
+##################################################################
+##################################################################
+##################################################################
+#    :::   ::::::::   ::::::::  ::::::::::: 
+#  :+:+:  :+:    :+: :+:    :+: :+:     :+: 
+#    +:+         +:+        +:+        +:+  
+#    +#+      +#++:      +#++:        +#+   
+#    +#+         +#+        +#+      +#+    
+#    #+#  #+#    #+# #+#    #+#     #+#     
+#  ####### ########   ########      ###     
+# 
+#  00110000011001001100100110111 
+Make "Load 1337 cur" Script to help me manage and organize the 1337 cursor 
+##################################################################
+##################################################################
+##################################################################
+
+alias list:
+DONE open => xdg-opensp
+DONE ls => list ll
+DONE cp => clear
+
+##################################################################
+##################################################################
+##################################################################
+
+--------------------notes-------------------------
+wev for key names and codes
+
+learn + costumize mc
+learn nvim
+learn tmux
+learn gimp
+Learn Kdenlive
+
+\\\\\\\\\|||||||||||grub costumizing :||||||||||||||\\\\\\\\\
+uncomment this:												\
+GRUB_TIMEOUT_STYLE=menu										\
+														    \
+cp the theme here:											\
+sudo cp -r /theme /boot/efi/EFI/fedora/themes/				\
+															\
+regenerate the GRUB config file:							\
+sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg		\
+															\
+reboot														\
+															\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+SDDM:
+/usr/share/sddm/themes
+sudo nano /etc/sddm.conf
+-----------------------------------
+Fix Plymouth
+================================================
+UNICODE ICONS:
+                  ⚠        
+------------------------------------------
+try alt istad of super as $mod
+-----------------------------------------------
+TEST BATTERY LIFE ON power-profiles-daemon VS TLP (TLP SHOULD BE BETTER)
+-------------------------------------------
+install vs code

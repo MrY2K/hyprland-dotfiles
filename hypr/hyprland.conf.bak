@@ -1,0 +1,163 @@
+#  ╔═╗┌─┐┬ ┬┬─┐┌─┐┌─┐┌─┐
+#  ╚═╗│ ││ │├┬┘│  ├┤ └─┐
+#  ╚═╝└─┘└─┘┴└─└─┘└─┘└─┘
+# Source a file (multi-file configs)
+
+
+
+#  ╔╦╗┌─┐┌┐┌┬┌┬┐┌─┐┬─┐
+#  ║║║│ │││││ │ │ │├┬┘
+#  ╩ ╩└─┘┘└┘┴ ┴ └─┘┴└─
+###
+monitor=eDP-1,1920x1080@60Hz,0x0,1.25
+###
+
+#  ┬  ┌─┐┬ ┬┌┐┌┌─┐┬ ┬
+#  │  ├─┤│ │││││  ├─┤
+#  ┴─┘┴ ┴└─┘┘└┘└─┘┴ ┴
+# Execute your favorite apps at launch
+###
+exec-once = waybar
+exec-once = hyprpaper
+###
+
+#  ╦  ╦┌─┐┬─┐┬┌─┐┌┐ ┬  ┌─┐┌─┐
+#  ╚╗╔╝├─┤├┬┘│├─┤├┴┐│  ├┤ └─┐
+#   ╚╝ ┴ ┴┴└─┴┴ ┴└─┘┴─┘└─┘└─┘
+# Set programs that you use
+$terminal = kitty
+$fileManager = dolphin
+$menu = wofi --show drun
+
+$burgundy = rgb(660033)
+$amethyst = rgb(9966cc)
+
+#  ┌─┐┌┐┌┬  ┬  ┬  ┬┌─┐┬─┐┌─┐
+#  ├┤ │││└┐┌┘  └┐┌┘├─┤├┬┘└─┐
+#  └─┘┘└┘ └┘    └┘ ┴ ┴┴└─└─┘
+# Some default env vars.
+###
+env = XCURSOR_SIZE,24
+env = QT_QPA_PLATFORMTHEME,qt5ct # change to qt6ct if you have that
+env = XCURSOR_SIZE,24
+env = GDK_SCALE,2
+###
+
+#  ╦╔═┌─┐┬ ┬┬ ┬┌─┐┬─┐┌┬┐┌─┐
+#  ╠╩╗├┤ └┬┘││││ │├┬┘ ││└─┐
+#  ╩ ╩└─┘ ┴ └┴┘└─┘┴└──┴┘└─┘
+###
+input {
+    kb_layout = us
+    kb_variant =
+    kb_model = pc105
+    kb_options =
+    kb_rules =
+
+    follow_mouse = 1
+
+    touchpad {
+        natural_scroll = yes
+        scroll_factor = 0.3
+    }
+    
+
+	
+	
+    sensitivity = 0 # -1.0 to 1.0, 0 means no modification.
+}
+
+general {
+    gaps_in = 2
+    gaps_out = 4
+    border_size = 0
+
+    col.active_border = $burgundy
+    col.inactive_border = $amethyst
+
+    layout = master
+
+    # Please see https://wiki.hyprland.org/Configuring/Tearing/ before you turn this on
+    allow_tearing = false
+}
+
+decoration {
+
+    rounding = 0
+    
+    blur {
+        enabled = true
+        size = 3
+        passes = 1
+    }
+
+    drop_shadow = yes
+    shadow_range = 4
+    shadow_render_power = 3
+    col.shadow = rgba(1a1a1aee)
+}
+
+animations {
+    enabled = yes
+
+    bezier = myBezier, 0.05, 0.9, 0.1, 1.05
+
+    animation = windows, 1, 7, myBezier
+    animation = windowsOut, 1, 7, default, popin 80%
+    animation = border, 1, 10, default
+    animation = borderangle, 1, 8, default
+    animation = fade, 1, 7, default
+    animation = workspaces, 1, 6, default
+}
+
+dwindle {
+    # See https://wiki.hyprland.org/Configuring/Dwindle-Layout/ for more
+    pseudotile = yes # master switch for pseudotiling. Enabling is bound to mainMod + P in the keybinds section belowenable workspace swipe gesture on touchpad
+    preserve_split = yes # you probably want this
+}
+
+master {
+    # See https://wiki.hyprland.org/Configuring/Master-Layout/ for more
+    new_is_master = true
+}
+
+gestures {
+	workspace_swipe = true
+	workspace_swipe_fingers = 3
+}
+
+misc {
+    force_default_wallpaper = -1 # Set to 0 or 1 to disable the anime mascot wallpapers
+}
+
+
+device {
+    name = epic-mouse-v1
+    sensitivity = -0.5
+}
+
+xwayland {
+	force_zero_scaling = true
+}
+
+# Example windowrule v1
+# windowrule = float, ^(kitty)$
+# Example windowrule v2
+# windowrulev2 = float,class:^(kitty)$,title:^(kitty)$
+# See https://wiki.hyprland.org/Configuring/Window-Rules/ for more
+windowrulev2 = suppressevent maximize, class:.* # You'll probably like this.
+
+#  ╦╔═┌─┐┬ ┬┬ ┬┌─┐┬─┐┌┬┐┌─┐
+#  ╠╩╗├┤ └┬┘││││ │├┬┘ ││└─┐
+#  ╩ ╩└─┘ ┴ └┴┘└─┘┴└──┴┘└─┘
+###
+$mainMod = SUPER
+
+#  ╔╗ ┬┌┐┌┌┬┐┌─┐
+#  ╠╩╗││││ ││└─┐
+#  ╚═╝┴┘└┘─┴┘└─┘
+###
+source = ~/.config/hypr/binds.conf
+
+
+
